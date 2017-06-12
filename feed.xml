@@ -1,5 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="sv"><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="sv" /><updated>2017-06-12T16:26:12+02:00</updated><id>http://localhost:4000/</id><title type="html">DigiLiv.se – En resa genom dagens digitala livet</title><subtitle>Tips, råd, berättelser om datorer och teknik till alla människor!
-</subtitle><entry><title type="html">Bing Desktop – en ny backgrundbild till ditt skrivbord varje dag</title><link href="http://localhost:4000/tips/bing-desktop.html" rel="alternate" type="text/html" title="Bing Desktop – en ny backgrundbild till ditt skrivbord varje dag" /><published>2017-06-06T22:00:00+02:00</published><updated>2017-06-06T22:00:00+02:00</updated><id>http://localhost:4000/tips/bing-desktop</id><content type="html" xml:base="http://localhost:4000/tips/bing-desktop.html">&lt;p&gt;Du vet kanske redan om inte-så-nyttig Microsofts webb sökmotor &lt;a href=&quot;http://www.bing.com/&quot;&gt;Bing.com&lt;/a&gt; som alla har hört om men ingen riktigt använder. Trots att den inte kommer att hjälpa oss med våra alldagliga “webbsökbehov”, den har fortfarande ett annat ess i rockärmen – &lt;em&gt;vackra (och också tematiska – som nyttår, påsk, jul osv. – om det gäller) dagliga foton som är, i majoritet, bara glädje att titta på&lt;/em&gt;. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="sv"><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://digiliv.se/feed.xml" rel="self" type="application/atom+xml" /><link href="https://digiliv.se/" rel="alternate" type="text/html" hreflang="sv" /><updated>2017-06-12T17:50:45+02:00</updated><id>https://digiliv.se/</id><title type="html">DigiLiv.se – En resa genom dagens digitala livet</title><subtitle>Tips, råd, berättelser om datorer och teknik till alla människor!
+</subtitle><entry><title type="html">Gör det lättare för din F5 tangent – använd Browsersync!</title><link href="https://digiliv.se/webbutveckling/gor-det-lattare-for-din-f5-tangent.html" rel="alternate" type="text/html" title="Gör det lättare för din F5 tangent – använd Browsersync!" /><published>2017-06-11T22:00:00+02:00</published><updated>2017-06-11T22:00:00+02:00</updated><id>https://digiliv.se/webbutveckling/gor-det-lattare-for-din-f5-tangent</id><content type="html" xml:base="https://digiliv.se/webbutveckling/gor-det-lattare-for-din-f5-tangent.html">&lt;p&gt;Om vi skapar eller anpassar front-end av webbsidor genom att editera HTML/CSS källor, det är många gånger som vi måste uppdatera sidorna i vår webbläsare – så att vi kan granska ändringarna. Men varför inte automatisera det?&lt;/p&gt;
+
+&lt;h2 id=&quot;browsersync-kommer-till-hjälp&quot;&gt;Browsersync kommer till hjälp&lt;/h2&gt;
+
+&lt;p&gt;Ett väldigt nyttigt verktyg, som håller webbfönstret (med vår sida som vi jobbar på) ständigt uppdaterat, heter &lt;a href=&quot;https://www.browsersync.io/&quot; target=&quot;_blank&quot;&gt;BrowserSync&lt;/a&gt;. Det är också lätt att ställa upp och använda. Låt oss börja med det!&lt;/p&gt;
+
+&lt;p&gt;Först måste vi ha &lt;a href=&quot;http://nodejs.com/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; med &lt;em&gt;npm&lt;/em&gt; pakethanterare installerat på vår dator – då anger vi ett kommando in i terminalen av vårt operativsystem, genom det kan vi installera Browsersync (helst globalt, därför &lt;em&gt;-g&lt;/em&gt; flaggan):&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;browser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sync&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Därefter bör vi klistra ett JavaScript kodfragment in i källkoden av vår front-end (idealiskt en fragment som visas på alla sidor av vår webbplats – t.ex. header, footer eller liknande). &lt;strong&gt;Det här kodfragmentet ska se till att vår lokala server (som vi kommer att starta senare när vi vill arbeta på vår sida) ansluter till webbsidan i vår webbläsare (genom &lt;a href=&quot;https://sv.wikipedia.org/wiki/Websocket&quot; target=&quot;_blank&quot;&gt;WebSockets&lt;/a&gt;) och kommunicerar med den i realtid (så att servern kan meddela webbläsaren om att den borde uppdatera webbsidan).&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Kodfragmentet ska se så här ut (eller något analogt, du hittar det efter du installerar och startar Browsersync server):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script id=&quot;__bs_script__&quot;&amp;gt;
+    //&amp;lt;![CDATA[
+        document
+            .write(
+                &quot;&amp;lt;script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'&amp;gt;&amp;lt;\/script&amp;gt;&quot;
+                .replace(&quot;HOST&quot;, location.hostname)
+            );
+    //]]&amp;gt;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Det finns också andra alternativ hur kan vi införa Browsersync (som t.ex. genom &lt;a href=&quot;https://browsersync.io/docs/gulp&quot; target=&quot;_blank&quot;&gt;Gulp&lt;/a&gt; eller &lt;a href=&quot;https://browsersync.io/docs/grunt&quot; target=&quot;_blank&quot;&gt;Grunt&lt;/a&gt;), så vi kan frivilligt välja det bästa sättet som passar vår workflow.&lt;/p&gt;
+
+&lt;h2 id=&quot;starta-severn&quot;&gt;Starta severn!&lt;/h2&gt;
+
+&lt;p&gt;Nu kan vi starta Browsersync direkt och arbeta vidare på vår webbsida – &lt;strong&gt;Browsersync uppmärksammar alla ändringar som vi gör till filer och uppdaterar webbläsaren automatiskt&lt;/strong&gt;. Det gör vi genom ett annat kommando, som vi startar i rotmappen där vi har våra filer (&lt;em&gt;bara om det gäller en statisk sida, annars kan vi använda Browsersync som en proxy, men jak ska inte täcka den möjligheten här – du kan läsa mer om den &lt;a href=&quot;https://browsersync.io/docs/options#option-proxy&quot; target=&quot;_blank&quot;&gt;på projektets webbsida&lt;/a&gt;&lt;/em&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;browser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sync&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;css/*.css&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;*.html&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Så här enkelt startar du servern och meddelar den om vilka filer ska servern observera ändringar på (genom flaggan &lt;em&gt;–files&lt;/em&gt; och dess parametrar, vilka föreställar vägar till filerna som ska observeras).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/gor-det-lattare-for-din-f5-tangent/browsersync_kommando.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Detta är outputen som vi ska se efter att vi kör kommandot ovan. Vi kan se två “Access URLs”:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Den första, &lt;strong&gt;&lt;em&gt;http://localhost:3000&lt;/em&gt;&lt;/strong&gt; är en ingångspunkten för vår webbsida – sidan ska också uppdateras automatiskt&lt;/li&gt;
+  &lt;li&gt;Den andra, &lt;strong&gt;&lt;em&gt;http://localhost:3001&lt;/em&gt;&lt;/strong&gt; är en webbpannel genom den kan vi granska statusen på Browsersync och ändra inställningarna&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/gor-det-lattare-for-din-f5-tangent/browsersync_dash.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Det är också bra att vi kan ansluta till servrern “externt”, om vi anpassar brandväggen och router på ett rätt sätt (IP måste vara tillgänglig utifrån det lokala nätverket).&lt;/p&gt;
+
+&lt;h2 id=&quot;ytterligare-verktyg-och-möjligheter&quot;&gt;Ytterligare verktyg och möjligheter&lt;/h2&gt;
+
+&lt;p&gt;Browsersync innehåller dessutom extra funktioner som ska kanske hjälpa oss med webbutveckling.&lt;/p&gt;
+
+&lt;p&gt;En av de funktionerna är att Browsersync kan &lt;strong&gt;markera alla HTML elementer på sidan med en kontur&lt;/strong&gt;, eller även &lt;strong&gt;lägga till skuggor till dem – som ska beteckna djupet (dvs. z-koordinat) av varje element&lt;/strong&gt;. Till slut kan den visa ett &lt;strong&gt;rutnät över hela webbsidan&lt;/strong&gt; (som kan hjälpa oss till att positionera individuella element).&lt;/p&gt;
+
+&lt;p&gt;Här kan du observera hur ska det se ut med alla optionerna på samtidigt :-)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/gor-det-lattare-for-din-f5-tangent/browsersync_css.png&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Andra alternativ kan t.ex. begränsa (bara som en simulering inom Browsersync) anslutningshastighet så att vi kan testa hur ska vår sida behöva vid en langsam internetanslutning. Också ganska nyttig!&lt;/p&gt;</content><author><name></name></author><summary type="html">Om vi skapar eller anpassar front-end av webbsidor genom att editera HTML/CSS källor, det är många gånger som vi måste uppdatera sidorna i vår webbläsare – så att vi kan granska ändringarna. Men varför inte automatisera det?</summary></entry><entry><title type="html">Bing Desktop – en ny backgrundbild till ditt skrivbord varje dag</title><link href="https://digiliv.se/tips/bing-desktop.html" rel="alternate" type="text/html" title="Bing Desktop – en ny backgrundbild till ditt skrivbord varje dag" /><published>2017-06-06T22:00:00+02:00</published><updated>2017-06-06T22:00:00+02:00</updated><id>https://digiliv.se/tips/bing-desktop</id><content type="html" xml:base="https://digiliv.se/tips/bing-desktop.html">&lt;p&gt;Du vet kanske redan om inte-så-nyttig Microsofts webb sökmotor &lt;a href=&quot;http://www.bing.com/&quot;&gt;Bing.com&lt;/a&gt; som alla har hört om men ingen riktigt använder. Trots att den inte kommer att hjälpa oss med våra alldagliga “webbsökbehov”, den har fortfarande ett annat ess i rockärmen – &lt;em&gt;vackra (och också tematiska – som nyttår, påsk, jul osv. – om det gäller) dagliga foton som är, i majoritet, bara glädje att titta på&lt;/em&gt;. 
 Man kan se dem direkt på &lt;a href=&quot;http://www.bing.com/&quot;&gt;Bings hemsida&lt;/a&gt; eller i &lt;a href=&quot;http://www.bing.com/gallery/&quot;&gt;ett dedicerade galleri&lt;/a&gt;, som en snygg översikt på en “tapisseri av bilder”.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Men vilken funktion tjänar det att ha vackra bilder, som vi vill titta på, på en webbsida vi aldrig besöker? Ingen, självklart!&lt;/strong&gt;
@@ -18,7 +81,7 @@ Lyckligtvis verkar det som att Microsoft har också tänkt på det och gav oss e
 &lt;p&gt;Dessutom innehåller appen också några Bing-relaterade funktioner (t.ex. vädret, nyheter och sökning) som vi, givetvis, aldrig nånsin kommer att bruka ( ͡° ͜ʖ ͡°). 
 Om vi inte vill att vår dator blir “förorenad” med en tung applikation som innehåller flera andra funktioner vi inte behöver, då finns det också många olika skripter som skapats av andra användare/programmerare som vi kan bruka – och som, i många fall, funkar även på andra operativsystem (dvs. Linux och OS X).&lt;/p&gt;
 
-&lt;p&gt;Det är bara att klistra in frasen &lt;em&gt;“bing wallpaper”&lt;/em&gt; i GitHubs sökfältet och &lt;a href=&quot;https://github.com/search?q=bing+wallpaper&quot;&gt;då är vi presenterad med massor av skripter&lt;/a&gt; som vi kan använda att nedladda Bing bilder (och ange dem som vår skrivbordsbakgrund) helt automatiskt. &lt;em&gt;Men det också kräver att man införer de skripterna manuellt, så det kanske inte är ett lämpligt alternativ för alla användare&lt;/em&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Du vet kanske redan om inte-så-nyttig Microsofts webb sökmotor Bing.com som alla har hört om men ingen riktigt använder. Trots att den inte kommer att hjälpa oss med våra alldagliga “webbsökbehov”, den har fortfarande ett annat ess i rockärmen – vackra (och också tematiska – som nyttår, påsk, jul osv. – om det gäller) dagliga foton som är, i majoritet, bara glädje att titta på. Man kan se dem direkt på Bings hemsida eller i ett dedicerade galleri, som en snygg översikt på en “tapisseri av bilder”.</summary></entry><entry><title type="html">Nu kör vi! DigiLiv.se är en ny blogg om teknik för alla människor</title><link href="http://localhost:4000/bloggen/nu-kor-vi.html" rel="alternate" type="text/html" title="Nu kör vi! DigiLiv.se är en ny blogg om teknik för alla människor" /><published>2017-06-03T17:00:00+02:00</published><updated>2017-06-03T17:00:00+02:00</updated><id>http://localhost:4000/bloggen/nu-kor-vi</id><content type="html" xml:base="http://localhost:4000/bloggen/nu-kor-vi.html">&lt;p&gt;Hallå världen och välkommna till en ny “&lt;em&gt;digiblogg&lt;/em&gt;”!&lt;/p&gt;
+&lt;p&gt;Det är bara att klistra in frasen &lt;em&gt;“bing wallpaper”&lt;/em&gt; i GitHubs sökfältet och &lt;a href=&quot;https://github.com/search?q=bing+wallpaper&quot;&gt;då är vi presenterad med massor av skripter&lt;/a&gt; som vi kan använda att nedladda Bing bilder (och ange dem som vår skrivbordsbakgrund) helt automatiskt. &lt;em&gt;Men det också kräver att man införer de skripterna manuellt, så det kanske inte är ett lämpligt alternativ för alla användare&lt;/em&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Du vet kanske redan om inte-så-nyttig Microsofts webb sökmotor Bing.com som alla har hört om men ingen riktigt använder. Trots att den inte kommer att hjälpa oss med våra alldagliga “webbsökbehov”, den har fortfarande ett annat ess i rockärmen – vackra (och också tematiska – som nyttår, påsk, jul osv. – om det gäller) dagliga foton som är, i majoritet, bara glädje att titta på. Man kan se dem direkt på Bings hemsida eller i ett dedicerade galleri, som en snygg översikt på en “tapisseri av bilder”.</summary></entry><entry><title type="html">Nu kör vi! DigiLiv.se är en ny blogg om teknik för alla människor</title><link href="https://digiliv.se/bloggen/nu-kor-vi.html" rel="alternate" type="text/html" title="Nu kör vi! DigiLiv.se är en ny blogg om teknik för alla människor" /><published>2017-06-03T17:00:00+02:00</published><updated>2017-06-03T17:00:00+02:00</updated><id>https://digiliv.se/bloggen/nu-kor-vi</id><content type="html" xml:base="https://digiliv.se/bloggen/nu-kor-vi.html">&lt;p&gt;Hallå världen och välkommna till en ny “&lt;em&gt;digiblogg&lt;/em&gt;”!&lt;/p&gt;
 
 &lt;h2 id=&quot;vad-är-målet-med-bloggen&quot;&gt;Vad är målet med bloggen?&lt;/h2&gt;
 

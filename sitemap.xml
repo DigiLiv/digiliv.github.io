@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/bloggen/nu-kor-vi.html</loc>
+<lastmod>2017-06-03T17:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/tips/bing-desktop.html</loc>
+<lastmod>2017-06-06T22:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/webbutveckling/gor-det-lattare-for-din-f5-tangent.html</loc>
+<lastmod>2017-06-12T16:26:11+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+</urlset>

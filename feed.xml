@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="sv"><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="sv" /><updated>2017-06-12T16:26:12+02:00</updated><id>http://localhost:4000/</id><title type="html">DigiLiv.se – En resa genom dagens digitala livet</title><subtitle>Tips, råd, berättelser om datorer och teknik till alla människor!
+</subtitle><entry><title type="html">Bing Desktop – en ny backgrundbild till ditt skrivbord varje dag</title><link href="http://localhost:4000/tips/bing-desktop.html" rel="alternate" type="text/html" title="Bing Desktop – en ny backgrundbild till ditt skrivbord varje dag" /><published>2017-06-06T22:00:00+02:00</published><updated>2017-06-06T22:00:00+02:00</updated><id>http://localhost:4000/tips/bing-desktop</id><content type="html" xml:base="http://localhost:4000/tips/bing-desktop.html">&lt;p&gt;Du vet kanske redan om inte-så-nyttig Microsofts webb sökmotor &lt;a href=&quot;http://www.bing.com/&quot;&gt;Bing.com&lt;/a&gt; som alla har hört om men ingen riktigt använder. Trots att den inte kommer att hjälpa oss med våra alldagliga “webbsökbehov”, den har fortfarande ett annat ess i rockärmen – &lt;em&gt;vackra (och också tematiska – som nyttår, påsk, jul osv. – om det gäller) dagliga foton som är, i majoritet, bara glädje att titta på&lt;/em&gt;. 
+Man kan se dem direkt på &lt;a href=&quot;http://www.bing.com/&quot;&gt;Bings hemsida&lt;/a&gt; eller i &lt;a href=&quot;http://www.bing.com/gallery/&quot;&gt;ett dedicerade galleri&lt;/a&gt;, som en snygg översikt på en “tapisseri av bilder”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Men vilken funktion tjänar det att ha vackra bilder, som vi vill titta på, på en webbsida vi aldrig besöker? Ingen, självklart!&lt;/strong&gt;
+Lyckligtvis verkar det som att Microsoft har också tänkt på det och gav oss en möjlighet att ställa in de bilderna som våra skrivbordsbakgrunder – där de också verkligen passar!&lt;/p&gt;
+
+&lt;h2 id=&quot;nu-blir-det-en-ny-vacker-bild-på-ditt-skrivbord--varje-dag&quot;&gt;Nu blir det en ny vacker bild på ditt skrivbord – varje dag!&lt;/h2&gt;
+
+&lt;p&gt;Den möjligheten finns i en Microsofts lilla applikation som heter &lt;strong&gt;&lt;a href=&quot;http://www.bing.com/explore/desktop&quot;&gt;Bing Desktop&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Efter en enkel och snabb installation har vi ett litet programm genom det kan vi anpassa vår bakgrundbild. Det sker antingen automatiskt varje dag (med en aktuell bild – appen startar med Windows), eller vi kan välja manuellt utifrån bilder som tillhörde någon av senaste dagarna.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/bing-desktop/bingdesktop.jpg&quot; alt=&quot;&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;Är-bing-desktop-för-tung-då-finns-det-alternativ&quot;&gt;Är Bing Desktop för “tung”? Då finns det alternativ!&lt;/h2&gt;
+
+&lt;p&gt;Dessutom innehåller appen också några Bing-relaterade funktioner (t.ex. vädret, nyheter och sökning) som vi, givetvis, aldrig nånsin kommer att bruka ( ͡° ͜ʖ ͡°). 
+Om vi inte vill att vår dator blir “förorenad” med en tung applikation som innehåller flera andra funktioner vi inte behöver, då finns det också många olika skripter som skapats av andra användare/programmerare som vi kan bruka – och som, i många fall, funkar även på andra operativsystem (dvs. Linux och OS X).&lt;/p&gt;
+
+&lt;p&gt;Det är bara att klistra in frasen &lt;em&gt;“bing wallpaper”&lt;/em&gt; i GitHubs sökfältet och &lt;a href=&quot;https://github.com/search?q=bing+wallpaper&quot;&gt;då är vi presenterad med massor av skripter&lt;/a&gt; som vi kan använda att nedladda Bing bilder (och ange dem som vår skrivbordsbakgrund) helt automatiskt. &lt;em&gt;Men det också kräver att man införer de skripterna manuellt, så det kanske inte är ett lämpligt alternativ för alla användare&lt;/em&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">Du vet kanske redan om inte-så-nyttig Microsofts webb sökmotor Bing.com som alla har hört om men ingen riktigt använder. Trots att den inte kommer att hjälpa oss med våra alldagliga “webbsökbehov”, den har fortfarande ett annat ess i rockärmen – vackra (och också tematiska – som nyttår, påsk, jul osv. – om det gäller) dagliga foton som är, i majoritet, bara glädje att titta på. Man kan se dem direkt på Bings hemsida eller i ett dedicerade galleri, som en snygg översikt på en “tapisseri av bilder”.</summary></entry><entry><title type="html">Nu kör vi! DigiLiv.se är en ny blogg om teknik för alla människor</title><link href="http://localhost:4000/bloggen/nu-kor-vi.html" rel="alternate" type="text/html" title="Nu kör vi! DigiLiv.se är en ny blogg om teknik för alla människor" /><published>2017-06-03T17:00:00+02:00</published><updated>2017-06-03T17:00:00+02:00</updated><id>http://localhost:4000/bloggen/nu-kor-vi</id><content type="html" xml:base="http://localhost:4000/bloggen/nu-kor-vi.html">&lt;p&gt;Hallå världen och välkommna till en ny “&lt;em&gt;digiblogg&lt;/em&gt;”!&lt;/p&gt;
+
+&lt;h2 id=&quot;vad-är-målet-med-bloggen&quot;&gt;Vad är målet med bloggen?&lt;/h2&gt;
+
+&lt;p&gt;Det huvudsakliga syftet är att presentera flera olika begrepp från “den digitala världen” på ett tydligt och enkelt sätt – lätt att förstå och lätt att följa.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Jag är själv ingen erfaren professionell, utan en entusiast – så ska jag se till att jag kan dela med mig av min entusiasm till alla andra, här på bloggens sidor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Oavsett hur mycket du vet om “teknik och datorer”, känna dig hjärtligt välkommen här på DigiLiv!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Ett annat syfte är för mig att lära mig ett språk. Jag är inte en svensk, jag inte bor i Sverige, men ändå tycker jag om det svenska språket och vill lära mig det. Dessutom tycker jag om datorer. &lt;em&gt;Det föreföll mig att jag kunde lära mig lite svenska, skriva om vad jag gillar och kanske också hjälpa andra människor. Allt det samtidigt, genom att skriva en blogg – på svenska, om datorer. Så, här är jag.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Om du märker ett fel som verkligen besvärar dig, tveka då inte att skriva om det till mig – antingen skicka mig ett meddelande, eller skriv en kommentar nedanför den ifrågavarande artikeln :-)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;vad-ska-hända-nu-här-på-bloggen&quot;&gt;Vad ska hända nu här på bloggen?&lt;/h2&gt;
+
+&lt;p&gt;Först och främst kommer &lt;strong&gt;jag att ge ut tips som gäller olika datorprogram och webbsidor&lt;/strong&gt; och släppa ut instruktioner till dem. Kanske även något om några programmeringsspråk!&lt;/p&gt;
+
+&lt;p&gt;Jag ska också göra om den här bloggen, som drivs av Jekyll (men nuförtiden är bloggen bara dess grundläggande installationen) – jag ska skapa och införa en egen tema, lägga till ny funktionalitet… och samtidigt skriva om allt det, så att ni, läsarna, kan också skapa era egna webbsidor, helt enkelt och som billigt som möjligt (även helt kostnadsfritt) genom att använda open-source teknologier och verktyg.&lt;/p&gt;
+
+&lt;p&gt;I slutet hoppas jag att jag ska kunna &lt;strong&gt;informera er om vad som händer i den digitala världen&lt;/strong&gt;. Jag ska också observera vissa viktiga händelser och kommentera på dem.&lt;/p&gt;</content><author><name></name></author><summary type="html">Hallå världen och välkommna till en ny “digiblogg”!</summary></entry></feed>

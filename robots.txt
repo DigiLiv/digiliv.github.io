@@ -1,1 +1,3 @@
+User-Agent: *
+Disallow: 
 Sitemap: https://digiliv.se/sitemap.xml

@@ -1,15 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="sv"><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://digiliv.se/feed.xml" rel="self" type="application/atom+xml" /><link href="https://digiliv.se/" rel="alternate" type="text/html" hreflang="sv" /><updated>2017-06-15T23:02:02+02:00</updated><id>https://digiliv.se/</id><title type="html">DigiLiv.se – En resa genom dagens digitala livet</title><subtitle>Tips, råd, berättelser om datorer och teknik till alla människor!
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="sv"><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://digiliv.se/feed.xml" rel="self" type="application/atom+xml" /><link href="https://digiliv.se/" rel="alternate" type="text/html" hreflang="sv" /><updated>2017-06-16T15:53:38+02:00</updated><id>https://digiliv.se/</id><title type="html">DigiLiv.se – En resa genom dagens digitala livet</title><subtitle>Tips, råd, berättelser om datorer och teknik till alla människor!
 </subtitle><entry><title type="html">E3 2017 är förbi – vilka spel ser jag fram emot?</title><link href="https://digiliv.se/spel/e3-2017-ar-forbi-vilka-spel-ser-jag-fram-emot.html" rel="alternate" type="text/html" title="E3 2017 är förbi – vilka spel ser jag fram emot?" /><published>2017-06-15T23:00:00+02:00</published><updated>2017-06-15T23:00:00+02:00</updated><id>https://digiliv.se/spel/e3-2017-ar-forbi-vilka-spel-ser-jag-fram-emot</id><content type="html" xml:base="https://digiliv.se/spel/e3-2017-ar-forbi-vilka-spel-ser-jag-fram-emot.html">&lt;p&gt;Världens storsta videospelkonferens E3 (eller &lt;em&gt;Electronic Entertainment Expo&lt;/em&gt;) som utspelade sig i år mellan den 13 och 15 juli i Förenta staterna, staden Los Angeles, just tog slut idag och jag känner att nu är det tid för mig att rekapitulera vad är spelen jag ser fram emot mest. Jag är själv ingen stor datorspelare och jag inte tittade på många videoer från konferensen, men vissa spel fångade ändå mitt uppmärksamhet.&lt;/p&gt;
 
 &lt;h2 id=&quot;mina-topp-tre-spel&quot;&gt;Mina topp tre spel&lt;/h2&gt;
 
 &lt;h3 id=&quot;star-wars-battlefront-2&quot;&gt;Star Wars Battlefront 2&lt;/h3&gt;
 
-&lt;p&gt;Det verkar som detta ska vara ett riktigt spännande spel och en mycket bättre utgåva än den första Battlefront:en av den “nya generationen” från 2015 (vilken jag har inte spelt än, eftersom jag blev inte mycket inresserad av den, men jag kan föreställa mig att spela den andra). När jag såg trailern till Battlefront 2 så tyckte jag att detta är ett spel som jag måste verkligen ha.&lt;br /&gt;
+&lt;p&gt;Det verkar som detta ska vara ett riktigt spännande spel och en mycket bättre utgåva än den första Battlefront:en av den “nya generationen” från 2015 (vilken jag har inte spelat än, eftersom jag blev inte mycket inresserad av den, men jag kan föreställa mig att spela den andra). När jag såg trailern till Battlefront 2 så tyckte jag att detta är ett spel som jag måste verkligen ha.&lt;br /&gt;
 &lt;em&gt;Verkar som om att det ska vara dags för mig att äntligen köpa en ny dator (min nuvarande dator köpte jag år 2013 och även då var det bara en budget-dator – jag har Intel Pentium G2030 processor, 8 GB RAM minne och Radeon HD 7850 som grafikkortet, så det blir tydligt att jag ska inte kunna spela den nya Battlefront:en med den :-)), då spelet ser grafiskt väldigt bra ut och jag vill riktigt spela det.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Detta är en gameplay video som visar oss en strid på gator av staden Theed på planeten Naboo:&lt;/p&gt;
-&lt;iframe width=&quot;800&quot; height=&quot;450&quot; src=&quot;https://www.youtube.com/embed/BQ7RKhrF-oA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;div class=&quot;embed-youtube&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube.com/embed/BQ7RKhrF-oA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;age-of-empires-definitive-edition&quot;&gt;Age of Empires: Definitive Edition&lt;/h3&gt;
 
@@ -18,14 +20,18 @@
 &lt;p&gt;Så nu kan vi förvänta oss den gamla strategien med en nytt grafiskt utseende, ett fungerande “flera spelare” läge och många andra nyheter.&lt;/p&gt;
 
 &lt;p&gt;Här er den officiella trailern:&lt;/p&gt;
-&lt;iframe width=&quot;800&quot; height=&quot;450&quot; src=&quot;https://www.youtube.com/embed/JyPlECHiXcM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;div class=&quot;embed-youtube&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube.com/embed/JyPlECHiXcM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;ace-combat-7-skies-unknown&quot;&gt;Ace Combat 7: Skies Unknown&lt;/h3&gt;
 
 &lt;p&gt;Jag har alltid tyckt om den japanska spelserien Ace Combat som är full av stridsflygplan, explosioner och – ganska oväntat – historier (trots allt är det ett japanskt spel, eller :-)). Spelkänslan har alltid varit ganska spännande med Ace Combat spel och jag tycker att det här bidraget inte kommer att avvika. Men det ska vi se någon gång i 2018, när spelet är förmodad att komma ut.&lt;/p&gt;
 
 &lt;p&gt;Spelets trailer följer:&lt;/p&gt;
-&lt;iframe width=&quot;800&quot; height=&quot;450&quot; src=&quot;https://www.youtube.com/embed/6KVyY0Su4JY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;div class=&quot;embed-youtube&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube.com/embed/6KVyY0Su4JY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;vad-är-jag-inte-så-peppad-över&quot;&gt;Vad är jag inte så peppad över?&lt;/h2&gt;
 
